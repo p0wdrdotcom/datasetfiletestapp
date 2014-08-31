@@ -1,0 +1,11 @@
+<instance>
+   <application name="datasetfileparentchild"/>
+   <authority />
+   <authorizer/>
+   <name>datasetfileparentchild</name>
+   <theme>default</theme>
+   <url>datasetfileparentchild</url>
+   <enabled>true</enabled>
+   <variables>
+   </variables>
+</instance>

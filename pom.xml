@@ -66,10 +66,6 @@
                     <filesets>
                         <fileset>
                             <directory>${basedir}/lib/</directory>
-                            <!--<excludes>-->
-                            <!--    <exclude>com.aviarc.contract-1.0-SNAPSHOT.jar</exclude>-->
-                            <!--    <exclude>com.aviarc.framework.databroker.datasetfile-0.0.1-SNAPSHOT.jar</exclude>-->
-                            <!--</excludes>-->
                             <followSymlinks>false</followSymlinks>
                         </fileset>
                     </filesets>

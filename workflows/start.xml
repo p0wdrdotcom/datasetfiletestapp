@@ -1,0 +1,12 @@
+<workflow>
+    <dataset name="test" databroker="test-wf" />
+    <dataset name="new-test" />
+    <create-row dataset="new-test" />
+    <dataset name="new-child" />
+    <create-row dataset="new-child" />
+    <dataset name="new-grandchild" />
+    <create-row dataset="new-grandchild" />
+    <show-screen name="test">
+         <refresh-dataset query="get-all" name="test" />
+    </show-screen>
+</workflow>

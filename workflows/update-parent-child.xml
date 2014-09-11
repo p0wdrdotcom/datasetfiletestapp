@@ -1,0 +1,6 @@
+<do>
+    <mark-row-updated dataset="parent/child" />
+    <atomic-commit>
+        <dataset name="parent"/>
+    </atomic-commit>
+</do>

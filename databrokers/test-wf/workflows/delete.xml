@@ -1,0 +1,10 @@
+<workflow>
+    <set-current-row-by-field field="_id" dataset="{$context.internal-dataset-name}" value="{$commit-row._id}" />
+    <if>
+        <condition test="equal" value1="{${$context.internal-dataset-name}._id}" value2="{$commit-row._id}" />
+        <then>
+            <delete-row dataset="{$context.internal-dataset-name}" />
+        </then>
+    </if>
+    <debug-all />
+</workflow>

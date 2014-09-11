@@ -1,0 +1,26 @@
+<dataset name="backing-dataset">
+  <row>
+    <field name="_id" value="1"/>
+    <field name="parent-id" value="1"/>
+    <field name="firstname" value="Joe"/>
+    <field name="lastname" value="Bloggs"/>
+  </row>
+  <row>
+    <field name="_id" value="2"/>
+    <field name="parent-id" value="1"/>
+    <field name="firstname" value="Jim"/>
+    <field name="lastname" value="Bob"/>
+  </row>
+  <row>
+    <field name="_id" value="3"/>
+    <field name="parent-id" value="2"/>
+    <field name="firstname" value="James"/>
+    <field name="lastname" value="Bits"/>
+  </row>
+  <row>
+    <field name="_id" value="4"/>
+    <field name="parent-id" value="2"/>
+    <field name="firstname" value="Bobby"/>
+    <field name="lastname" value="Tables"/>
+  </row>
+</dataset>

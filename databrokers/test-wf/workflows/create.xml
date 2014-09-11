@@ -1,0 +1,61 @@
+<workflow xmlns:dataset="urn:aviarc:xmlcommand:com.aviarc.dataset" xmlns:support="urn:aviarc:xmlcommand:support">
+    <if>
+        <condition test="equal" value1="{$commit-metadata.has-parent}" value2="false" />
+        <then>
+            <create-row dataset="{$context.internal-dataset-name}"/>
+            <set-field field="{$context.internal-dataset-name}._id">
+                <support:uuid />
+            </set-field>
+            <dataset:field-iterator dataset="{$context.commit-row}"
+                                    value-field="var.value-field"
+                                    name-field="var.field-name">
+                <set-field field="{$context.internal-dataset-name}.{$var.field-name}"
+                           value="{$var.value-field}" />
+            </dataset:field-iterator> 
+        </then>
+        <else>
+            <if>
+                <condition test="equal" value1="{$commit-metadata.dataset-name}" value2="child" />
+                <then>
+                    <set-current-row-by-field field="_id" dataset="internal-dataset-name" value="{$parent-commit-row._id}" />
+                    <create-row dataset="internal-dataset-name/{$commit-metadata.dataset-name}" />
+                    <set-field field="internal-dataset-name/{$commit-metadata.dataset-name}._id">
+                        <support:uuid />
+                    </set-field>
+                    <dataset:field-iterator dataset="{$context.commit-row}"
+                                    value-field="var.value-field"
+                                    name-field="var.field-name">
+                            <set-field field="internal-dataset-name/{$commit-metadata.dataset-name}.{$var.field-name}"
+                                       value="{$var.value-field}" />
+                    </dataset:field-iterator>
+                </then>
+            </if>
+            <if>
+                <condition test="equal" value1="{$commit-metadata.dataset-name}" value2="grandchild" />
+                <then>
+                    <set-current-row-by-field field="_id" dataset="internal-dataset-name/child" value="{$parent-commit-row._id}" />
+                    <dataset-iterator dataset="internal-dataset-name">
+                        <dataset-iterator dataset="internal-dataset-name/child">
+                            <if>
+                                <condition test="equal" value1="{$internal-dataset-name/child._id}" value2="{$parent-commit-row._id}" />
+                                <then>
+                                    <create-row dataset="internal-dataset-name/child/grandchild" />
+                                    <set-field field="internal-dataset-name/child/grandchild._id">
+                                        <support:uuid />
+                                    </set-field>
+                                    <dataset:field-iterator dataset="{$context.commit-row}"
+                                        value-field="var.value-field"
+                                        name-field="var.field-name">
+                                        <set-field field="internal-dataset-name/child/grandchild.{$var.field-name}"
+                                                   value="{$var.value-field}" />
+                                    </dataset:field-iterator>
+                                </then>
+                            </if>
+                        </dataset-iterator>
+                    </dataset-iterator>
+                </then>
+            </if>
+        </else>
+    </if>
+    
+</workflow>

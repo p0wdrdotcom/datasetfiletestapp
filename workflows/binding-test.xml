@@ -1,0 +1,6 @@
+<workflow url="/binding-test">
+    <dataset name="parent" databinding="parent-child" />
+    <show-screen name="binding-test">
+        <refresh-dataset name="parent" query="get-all" />
+    </show-screen>
+</workflow>

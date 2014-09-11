@@ -1,0 +1,5 @@
+<do>
+    <atomic-commit>
+        <dataset name="test"/>
+    </atomic-commit>
+</do>

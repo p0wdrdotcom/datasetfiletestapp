@@ -1,0 +1,72 @@
+<dataset name="backing-dataset">
+  <row>
+    <field name="_id" value="1"/>
+    <field name="one" value="row1-value12"/>
+    <field name="two" value="row1-value2"/>
+    <dataset name="child">
+      <row>
+        <field name="_id" value="1"/>
+        <field name="foo" value="bar12"/>
+        <dataset name="grandchild">
+          <row>
+            <field name="_id" value="1"/>
+            <field name="foo" value="bar1"/>
+          </row>
+          <row>
+            <field name="_id" value="c5d03db6-3dcd-4d3b-97bb-1ec46fb52c2d"/>
+            <field name="foo" value="bar2"/>
+          </row>
+        </dataset>
+      </row>
+      <row>
+        <field name="_id" value="2"/>
+        <field name="foo" value="bar2"/>
+        <dataset name="grandchild">
+        </dataset>
+      </row>
+      <row>
+        <field name="_id" value="3"/>
+        <field name="foo" value="bar3"/>
+        <dataset name="grandchild">
+        </dataset>
+      </row>
+      <row>
+        <field name="_id" value="4"/>
+        <field name="foo" value="bar4"/>
+        <dataset name="grandchild">
+        </dataset>
+      </row>
+    </dataset>
+  </row>
+  <row>
+    <field name="_id" value="2"/>
+    <field name="one" value="row2-value3"/>
+    <field name="two" value="row2-value4"/>
+    <dataset name="child">
+      <row>
+        <field name="_id" value="5"/>
+        <field name="foo" value="bar5"/>
+        <dataset name="grandchild">
+        </dataset>
+      </row>
+      <row>
+        <field name="_id" value="6"/>
+        <field name="foo" value="bar6"/>
+        <dataset name="grandchild">
+        </dataset>
+      </row>
+      <row>
+        <field name="_id" value="7"/>
+        <field name="foo" value="bar7"/>
+        <dataset name="grandchild">
+        </dataset>
+      </row>
+      <row>
+        <field name="_id" value="8"/>
+        <field name="foo" value="bar8"/>
+        <dataset name="grandchild">
+        </dataset>
+      </row>
+    </dataset>
+  </row>
+</dataset>

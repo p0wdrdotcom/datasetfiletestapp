@@ -1,0 +1,11 @@
+<databroker factory-class="com.aviarc.framework.databroker.datasetfile.DatasetFileDataBrokerFactoryImpl">
+        <populate-operation name="get-all">
+              <dataset-result file="backing-dataset.xml" />
+        </populate-operation>
+        <populate-operation name="get-all-for-parent">
+              <parameters>
+                  <parameter name="parent-id" mandatory="y" />
+              </parameters>
+              <workflow-result workflow="get-all-for-parent"/>
+        </populate-operation>
+</databroker>

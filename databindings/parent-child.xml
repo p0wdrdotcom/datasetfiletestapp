@@ -1,0 +1,9 @@
+<databinding factory-class="com.aviarc.framework.databinding.basic.BasicDataBindingFactoryImpl" databroker="parent">
+    <populate-operation name="get-all" broker-operation="get-all">
+        <child-dataset name="child" databroker="child">
+            <row-populate-loop operation="get-all-for-parent">
+                <param name="parent-id" value="{$_id}"/>
+            </row-populate-loop>
+        </child-dataset>
+    </populate-operation>
+</databinding>

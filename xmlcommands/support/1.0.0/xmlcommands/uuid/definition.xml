@@ -1,0 +1,3 @@
+<xml-command name="uuid" classname="datasetfileparentchild.xmlcommands.Uuid">
+    <attributes></attributes>
+</xml-command>

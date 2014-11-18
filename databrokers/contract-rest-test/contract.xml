@@ -1,0 +1,56 @@
+<contract>
+   <databroker-contract>
+      <name>contract-rest-test</name>
+      <databroker-interface>
+         <populate-operations>
+            <populate-operation name="get-deals">
+               <input-dataset>
+                  <dataset/>
+               </input-dataset>
+               <output-dataset>
+                  <dataset>
+                     <field key="false" mandatory="false" name="template">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="id">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="price">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="terms">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="origin">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="image">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="destination">
+                        <metadata/>
+                     </field>
+                     <dataset name="child">
+                        <field key="false" mandatory="false" name="child">
+                           <metadata/>
+                        </field>
+                        <field key="false" mandatory="false" name="two">
+                           <metadata/>
+                        </field>
+                        <field key="false" mandatory="false" name="one">
+                           <metadata/>
+                        </field>
+                     </dataset>
+                  </dataset>
+               </output-dataset>
+            </populate-operation>
+         </populate-operations>
+         <call-operations/>
+         <datasource-bindings/>
+         <persistence-operations>
+            <parameters/>
+            <metadata/>
+         </persistence-operations>
+      </databroker-interface>
+   </databroker-contract>
+</contract>

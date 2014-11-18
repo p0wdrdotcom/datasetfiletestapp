@@ -1,0 +1,31 @@
+<workflow xmlns:dataset="urn:aviarc:xmlcommand:com.aviarc.dataset">
+    <delete-all-rows dataset="{$context.populate-dataset-name}" />
+    <dataset-iterator dataset="{$context.internal-dataset-name}">
+    
+    
+        <if>
+            <condition test="equal" value1="{$paramters.id}" value2="{${$context.internal-dataset-name}._id}" />
+            <then>
+                <create-row dataset="{$context.populate-dataset-name}" />
+                <dataset:field-iterator dataset="{$context.internal-dataset-name}" name-field="var.field" value-field="var.value">
+                    <set-field field="{$context.populate-dataset-name}.{$var.field}" value="{$var.value}" />
+                </dataset:field-iterator>
+                <dataset name="{$context.populate-dataset-name}/child" />
+                <dataset-iterator dataset="{$context.internal-dataset-name}/child">
+                    <create-row dataset="{$context.populate-dataset-name}/child" />
+                    <dataset:field-iterator dataset="{$context.internal-dataset-name}/child" name-field="var.field" value-field="var.value">
+                        <set-field field="{$context.populate-dataset-name}/child.{$var.field}" value="{$var.value}" />
+                    </dataset:field-iterator>
+                    <dataset name="{$context.populate-dataset-name}/child/grandchild" />
+                    <dataset-iterator dataset="{$context.internal-dataset-name}/child/grandchild">
+                        <create-row dataset="{$context.populate-dataset-name}/child/grandchild" />
+                        <dataset:field-iterator dataset="{$context.internal-dataset-name}/child/grandchild" name-field="var.field" value-field="var.value">
+                            <set-field field="{$context.populate-dataset-name}/child/grandchild.{$var.field}" value="{$var.value}" />
+                        </dataset:field-iterator>
+                    </dataset-iterator>
+                </dataset-iterator>
+            </then>
+        </if>
+    </dataset-iterator>
+    <dataset-reset dataset="{$context.populate-dataset-name}" />
+</workflow>

@@ -1,0 +1,5 @@
+<workflow url="/rest">
+    <dataset name="deals" databroker="contract-rest-test" query="get-deals" />
+    <debug-all />
+    <show-screen name="rest" />
+</workflow>

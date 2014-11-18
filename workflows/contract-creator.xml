@@ -1,7 +1,5 @@
-<workflow>
-    <dataset name="test" databroker="test-wf" />
-    
-    
+<workflow url="/contract">
+    <dataset name="test" databroker="contract-test" />
     
     <dataset name="new-test" />
     <create-row dataset="new-test" />

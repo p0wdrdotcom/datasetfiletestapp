@@ -67,4 +67,11 @@
       </row>
     </dataset>
   </row>
+  <row>
+    <field name="_id" value="5ee5012b-62e5-4104-adda-f23591990e1a"/>
+    <field name="two" value="qwer"/>
+    <field name="one" value="qwer"/>
+    <dataset name="child">
+    </dataset>
+  </row>
 </dataset>

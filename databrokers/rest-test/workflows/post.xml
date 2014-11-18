@@ -1,0 +1,38 @@
+<workflow>
+    <!-- Create some holding datasets -->
+    <dataset name="parent" />
+    <dataset name="parent/child" />
+    
+    <!-- copy the rows out of the result of the xslt into the holding datasets  -->
+    <dataset-iterator dataset="{$context.populate-dataset-name}">
+        <if>
+            <condition test="equal" value1="{${$context.populate-dataset-name}.child}" value2="true" />
+            <then>
+                <create-row dataset="parent/child" />
+                <copy-row to-dataset="parent/child" from-dataset="{$context.populate-dataset-name}" />
+            </then>
+            <else>
+                <create-row dataset="parent" />
+                <copy-row to-dataset="parent" from-dataset="{$context.populate-dataset-name}" />
+            </else>
+        </if>
+    </dataset-iterator>
+    
+    
+    <!-- empty the result and pre-create the child -->
+    <delete-all-rows dataset="{$context.populate-dataset-name}" />
+    <dataset name="{$context.populate-dataset-name}/child" />
+    
+    <!-- put the heirachy togethor -->
+    <dataset-iterator dataset="parent">
+        <create-row dataset="{$context.populate-dataset-name}" />
+        <copy-row to-dataset="{$context.populate-dataset-name}" from-dataset="parent" />
+        <dataset-iterator dataset="parent/child">
+            <create-row dataset="{$context.populate-dataset-name}/child" />
+            <copy-row to-dataset="{$context.populate-dataset-name}/child" from-dataset="parent/child" />
+        </dataset-iterator>
+    </dataset-iterator>
+    
+    <!-- reset the row marker as the result marker will be at the end. -->
+    <dataset-reset dataset="{$context.populate-dataset-name}" />
+</workflow>

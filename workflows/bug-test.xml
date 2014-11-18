@@ -1,0 +1,18 @@
+<workflow url="/bug">
+    <dataset name="parent" />
+    <create-row dataset="parent" />
+    <create-row dataset="parent" />
+    <dataset name="parent/child" />
+    <create-row dataset="parent/child" />
+    <create-row dataset="parent" />
+    <create-row dataset="parent/child" />
+    <create-row dataset="parent/child" />
+    <create-row dataset="parent/child" />
+    
+    <dataset-iterator dataset="parent">
+        <dataset-iterator dataset="parent/child">
+            <debug-all />
+        </dataset-iterator>
+    </dataset-iterator>
+    <show-screen name="bug" />
+</workflow>

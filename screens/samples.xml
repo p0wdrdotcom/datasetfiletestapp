@@ -1,0 +1,5 @@
+<screen xmlns:action="urn:aviarc:widget:com.aviarc.toronto.widget.core.action:1" 
+        xmlns:app="urn:aviarc:widget:application">
+        <text-edit left="0" width="100" top="0" height="20" field="samples.whaa"/>
+        <text-edit left="0" width="100" top="0" height="20" field="contract.huh"/>
+</screen>

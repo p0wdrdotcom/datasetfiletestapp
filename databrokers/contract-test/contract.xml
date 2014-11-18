@@ -1,0 +1,108 @@
+<contract>
+   <databroker-contract>
+      <name>contract-test</name>
+      <databroker-interface>
+         <populate-operations>
+            <populate-operation name="get-all">
+               <input-dataset>
+                  <dataset/>
+               </input-dataset>
+               <output-dataset>
+                  <dataset/>
+               </output-dataset>
+            </populate-operation>
+            <populate-operation name="get-contract-broker-contract">
+               <input-dataset>
+                  <dataset/>
+               </input-dataset>
+               <output-dataset>
+                  <dataset/>
+               </output-dataset>
+            </populate-operation>
+         </populate-operations>
+         <call-operations/>
+         <datasource-bindings/>
+         <persistence-operations>
+            <parameters/>
+            <metadata/>
+            <dataset>
+               <commit-action type="create">
+                  <metadata/>
+                  <input-fields>
+                     <field key="false" mandatory="false" name="two">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="one">
+                        <metadata/>
+                     </field>
+                  </input-fields>
+                  <output-fields>
+                     <field key="false" mandatory="false" name="two">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="one">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="_id">
+                        <metadata/>
+                     </field>
+                  </output-fields>
+               </commit-action>
+               <commit-action type="none">
+                  <metadata/>
+                  <input-fields>
+                     <field key="false" mandatory="false" name="_id">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="one">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="two">
+                        <metadata/>
+                     </field>
+                  </input-fields>
+                  <output-fields>
+                     <field key="false" mandatory="false" name="_id">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="one">
+                        <metadata/>
+                     </field>
+                     <field key="false" mandatory="false" name="two">
+                        <metadata/>
+                     </field>
+                  </output-fields>
+               </commit-action>
+               <dataset>
+                  <commit-action type="none">
+                     <metadata/>
+                     <input-fields/>
+                     <output-fields>
+                        <field key="false" mandatory="false" name="_id">
+                           <metadata/>
+                        </field>
+                        <field key="false" mandatory="false" name="foo">
+                           <metadata/>
+                        </field>
+                     </output-fields>
+                  </commit-action>
+                  <dataset>
+                     <commit-action type="none">
+                        <metadata/>
+                        <input-fields/>
+                        <output-fields>
+                           <field key="false" mandatory="false" name="_id">
+                              <metadata/>
+                           </field>
+                           <field key="false" mandatory="false" name="foo">
+                              <metadata/>
+                           </field>
+                        </output-fields>
+                     </commit-action>
+                  </dataset>
+               </dataset>
+            </dataset>
+         </persistence-operations>
+      </databroker-interface>
+   </databroker-contract>
+</contract>

@@ -1,0 +1,7 @@
+<databroker delegate-factory-class="com.aviarc.framework.databroker.datasetfile.DatasetFileDataBrokerFactoryImpl"
+            factory-class="com.aviarc.framework.databroker.contract.ContractCreatingDataBrokerFactoryImpl"
+            > <!-- implement-contract="contract.xml" -->
+        <populate-operation name="get-all">
+              <dataset-result file="backing-dataset.xml" />
+        </populate-operation>
+</databroker>

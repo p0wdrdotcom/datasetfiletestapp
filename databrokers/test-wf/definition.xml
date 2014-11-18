@@ -1,6 +1,9 @@
 <databroker factory-class="com.aviarc.framework.databroker.datasetfile.DatasetFileDataBrokerFactoryImpl">
+        <!--<populate-operation name="get-all">-->
+        <!--      <workflow-result workflow="workflows/get-all" />-->
+        <!--</populate-operation>-->
         <populate-operation name="get-all">
-              <workflow-result workflow="workflows/get-all" />
+              <dataset-result file="backing-dataset.xml" />
         </populate-operation>
         
         <store-dataset-changes>

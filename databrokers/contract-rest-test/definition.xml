@@ -1,0 +1,21 @@
+<databroker
+    factory-class="com.aviarc.framework.databroker.contract.ContractCreatingDataBrokerFactoryImpl"
+    delegate-factory-class="com.ninespokes.databroker.rest.RESTDataBrokerFactoryImpl">
+    <configuration>
+        <endpoint url="http://10.0.11.88:8181/api/"/>
+        <logging level="trace" user="REST-broker"/>
+    </configuration>
+ 
+    <operation name="get-deals" post-workflow="workflows/post">
+        <request method="GET" path="deals" />
+        <response transcode="json2xml" content-type="text/xml">
+            <transform path="deals.xsl" />
+        </response>
+    </operation>
+    <store-dataset-changes><!-- companies are not created in isolation see company register broker -->
+      
+        <delete>
+            <request method="DELETE"  path="deals"/>
+        </delete>
+    </store-dataset-changes>
+</databroker>

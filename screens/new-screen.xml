@@ -1,0 +1,7 @@
+<screen xmlns:action="urn:aviarc:widget:com.aviarc.toronto.widget.core.action:1" 
+        xmlns:dataset="urn:aviarc:widget:com.aviarc.toronto.widget.core.action.dataset"
+        xmlns:app="urn:aviarc:widget:application" 
+        xmlns:dragdrop="urn:aviarc:widget:com.aviarc.toronto.widget.dragdrop"
+        xmlns:sketch="urn:aviarc:widget:com.aviarc.toronto.widget.sketch">
+    
+</screen>

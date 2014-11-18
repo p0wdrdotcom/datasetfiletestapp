@@ -1,0 +1,6 @@
+<workflow url="/contract-samples">
+    <dataset name="samples" databroker="contract-test" query="get-contract-broker-samples"/>
+    <dataset name="contract" databroker="contract-test" query="get-contract-broker-contract"/>
+    <debug-all />
+    <show-screen name="samples" />
+</workflow>

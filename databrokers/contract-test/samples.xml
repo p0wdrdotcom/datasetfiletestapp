@@ -1,0 +1,458 @@
+<samples>
+   <populate-operations>
+      <populate-operation name="get-all">
+         <sample time="2014-11-05T10:11:39">
+            <parameters/>
+            <input>
+               <dataset isReadOnly="false" isValid="true" name="test"/>
+            </input>
+            <output>
+               <dataset isReadOnly="false" isValid="true" name="test">
+                  <row currentRow="true" isReadOnly="false" isValid="true">
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                            value="row1-value1"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                            value="row1-value2"/>
+                     <dataset isReadOnly="false" isValid="true" name="child">
+                        <row currentRow="true" isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild">
+                              <row currentRow="true" isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                              </row>
+                              <row isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                        value="d27f5af2-ed47-4548-9bbd-d06826e1e00f"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                              </row>
+                           </dataset>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="3"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar3"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="4"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar4"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                     </dataset>
+                  </row>
+                  <row isReadOnly="false" isValid="true">
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                            value="row2-value3"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                            value="row2-value4"/>
+                     <dataset isReadOnly="false" isValid="true" name="child">
+                        <row currentRow="true" isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="5"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar5"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="6"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar6"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="7"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar7"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild">
+                              <row currentRow="true" isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                        value="d36e9361-4309-4863-b642-f50d9feeffa5"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                              </row>
+                           </dataset>
+                        </row>
+                     </dataset>
+                  </row>
+               </dataset>
+            </output>
+         </sample>
+         <sample time="2014-11-05T10:12:06">
+            <parameters/>
+            <input>
+               <dataset isReadOnly="false" isValid="true" name="test">
+                  <row isReadOnly="false" isValid="true">
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                            value="row1-value1"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                            value="row1-value2"/>
+                     <dataset isReadOnly="false" isValid="true" name="child">
+                        <row currentRow="true" isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild">
+                              <row currentRow="true" isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                              </row>
+                              <row isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                        value="d27f5af2-ed47-4548-9bbd-d06826e1e00f"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                              </row>
+                           </dataset>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="3"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar3"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="4"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar4"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                     </dataset>
+                  </row>
+                  <row isReadOnly="false" isValid="true">
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                            value="row2-value3"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                            value="row2-value4"/>
+                     <dataset isReadOnly="false" isValid="true" name="child">
+                        <row currentRow="true" isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="5"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar5"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="6"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar6"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="7"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar7"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild">
+                              <row currentRow="true" isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                        value="d36e9361-4309-4863-b642-f50d9feeffa5"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                              </row>
+                           </dataset>
+                        </row>
+                     </dataset>
+                  </row>
+                  <row currentRow="true" isReadOnly="false" isValid="true">
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="two" value="qwer"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="one" value="qwer"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                            value="5ee5012b-62e5-4104-adda-f23591990e1a"/>
+                     <dataset isReadOnly="false" isValid="true" name="child"/>
+                  </row>
+               </dataset>
+            </input>
+            <output>
+               <dataset isReadOnly="false" isValid="true" name="test">
+                  <row currentRow="true" isReadOnly="false" isValid="true">
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                            value="row1-value1"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                            value="row1-value2"/>
+                     <dataset isReadOnly="false" isValid="true" name="child">
+                        <row currentRow="true" isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild">
+                              <row currentRow="true" isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                              </row>
+                              <row isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                        value="d27f5af2-ed47-4548-9bbd-d06826e1e00f"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                              </row>
+                           </dataset>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="3"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar3"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="4"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar4"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                     </dataset>
+                  </row>
+                  <row isReadOnly="false" isValid="true">
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                            value="row2-value3"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                            value="row2-value4"/>
+                     <dataset isReadOnly="false" isValid="true" name="child">
+                        <row currentRow="true" isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="5"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar5"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="6"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar6"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                        </row>
+                        <row isReadOnly="false" isValid="true">
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="7"/>
+                           <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar7"/>
+                           <dataset isReadOnly="false" isValid="true" name="grandchild">
+                              <row currentRow="true" isReadOnly="false" isValid="true">
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                        value="d36e9361-4309-4863-b642-f50d9feeffa5"/>
+                                 <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                              </row>
+                           </dataset>
+                        </row>
+                     </dataset>
+                  </row>
+                  <row isReadOnly="false" isValid="true">
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                            value="5ee5012b-62e5-4104-adda-f23591990e1a"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="two" value="qwer"/>
+                     <field isReadOnly="false" isValid="true" mandatory="false" name="one" value="qwer"/>
+                     <dataset isReadOnly="false" isValid="true" name="child"/>
+                  </row>
+               </dataset>
+            </output>
+         </sample>
+      </populate-operation>
+      <populate-operation name="get-contract-broker-contract">
+         <sample time="2014-11-06T09:11:28">
+            <parameters/>
+            <input>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </input>
+            <output>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </output>
+         </sample>
+         <sample time="2014-11-06T09:11:29">
+            <parameters/>
+            <input>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </input>
+            <output>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </output>
+         </sample>
+         <sample time="2014-11-06T09:11:31">
+            <parameters/>
+            <input>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </input>
+            <output>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </output>
+         </sample>
+         <sample time="2014-11-06T09:11:32">
+            <parameters/>
+            <input>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </input>
+            <output>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </output>
+         </sample>
+         <sample time="2014-11-06T09:11:43">
+            <parameters/>
+            <input>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </input>
+            <output>
+               <dataset isReadOnly="false" isValid="true" name="contract"/>
+            </output>
+         </sample>
+      </populate-operation>
+   </populate-operations>
+   <store-operations>
+      <sample time="2014-11-05T10:12:06">
+         <parameters/>
+         <input>
+            <dataset isReadOnly="false" isValid="true" name="test">
+               <row isReadOnly="false" isValid="true">
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                         value="row1-value1"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                         value="row1-value2"/>
+                  <dataset isReadOnly="false" isValid="true" name="child">
+                     <row currentRow="true" isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild">
+                           <row currentRow="true" isReadOnly="false" isValid="true">
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                           </row>
+                           <row isReadOnly="false" isValid="true">
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                     value="d27f5af2-ed47-4548-9bbd-d06826e1e00f"/>
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                           </row>
+                        </dataset>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="3"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar3"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="4"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar4"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                  </dataset>
+               </row>
+               <row isReadOnly="false" isValid="true">
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                         value="row2-value3"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                         value="row2-value4"/>
+                  <dataset isReadOnly="false" isValid="true" name="child">
+                     <row currentRow="true" isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="5"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar5"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="6"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar6"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="7"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar7"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild">
+                           <row currentRow="true" isReadOnly="false" isValid="true">
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                     value="d36e9361-4309-4863-b642-f50d9feeffa5"/>
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                           </row>
+                        </dataset>
+                     </row>
+                  </dataset>
+               </row>
+               <row commitAction="create" currentRow="true" isReadOnly="false" isValid="true">
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="two" value="qwer"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="one" value="qwer"/>
+                  <dataset isReadOnly="false" isValid="true" name="child"/>
+               </row>
+            </dataset>
+         </input>
+         <output>
+            <dataset isReadOnly="false" isValid="true" name="test">
+               <row isReadOnly="false" isValid="true">
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                         value="row1-value1"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                         value="row1-value2"/>
+                  <dataset isReadOnly="false" isValid="true" name="child">
+                     <row currentRow="true" isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild">
+                           <row currentRow="true" isReadOnly="false" isValid="true">
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="1"/>
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                           </row>
+                           <row isReadOnly="false" isValid="true">
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                     value="d27f5af2-ed47-4548-9bbd-d06826e1e00f"/>
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                           </row>
+                        </dataset>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar2"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="3"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar3"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="4"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar4"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                  </dataset>
+               </row>
+               <row isReadOnly="false" isValid="true">
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="2"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="one"
+                         value="row2-value3"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="two"
+                         value="row2-value4"/>
+                  <dataset isReadOnly="false" isValid="true" name="child">
+                     <row currentRow="true" isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="5"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar5"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="6"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar6"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild"/>
+                     </row>
+                     <row isReadOnly="false" isValid="true">
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="_id" value="7"/>
+                        <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar7"/>
+                        <dataset isReadOnly="false" isValid="true" name="grandchild">
+                           <row currentRow="true" isReadOnly="false" isValid="true">
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                                     value="d36e9361-4309-4863-b642-f50d9feeffa5"/>
+                              <field isReadOnly="false" isValid="true" mandatory="false" name="foo" value="bar1"/>
+                           </row>
+                        </dataset>
+                     </row>
+                  </dataset>
+               </row>
+               <row currentRow="true" isReadOnly="false" isValid="true">
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="two" value="qwer"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="one" value="qwer"/>
+                  <field isReadOnly="false" isValid="true" mandatory="false" name="_id"
+                         value="5ee5012b-62e5-4104-adda-f23591990e1a"/>
+                  <dataset isReadOnly="false" isValid="true" name="child"/>
+               </row>
+            </dataset>
+         </output>
+      </sample>
+   </store-operations>
+</samples>

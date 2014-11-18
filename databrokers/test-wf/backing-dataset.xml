@@ -1,17 +1,13 @@
 <dataset name="backing-dataset">
   <row>
     <field name="_id" value="1"/>
-    <field name="one" value="row1-value4"/>
+    <field name="one" value="row1-value1"/>
     <field name="two" value="row1-value2"/>
     <dataset name="child">
       <row>
         <field name="_id" value="1"/>
-        <field name="foo" value="bar12"/>
+        <field name="foo" value="bar1"/>
         <dataset name="grandchild">
-          <row>
-            <field name="_id" value="1"/>
-            <field name="foo" value="bar1"/>
-          </row>
         </dataset>
       </row>
       <row>
@@ -27,8 +23,8 @@
         </dataset>
       </row>
       <row>
-        <field name="_id" value="4"/>
-        <field name="foo" value="bar4"/>
+        <field name="_id" value="59323a2a-fd8d-44c8-b90e-965857e67f90"/>
+        <field name="foo" value="asdf"/>
         <dataset name="grandchild">
         </dataset>
       </row>
@@ -41,7 +37,7 @@
     <dataset name="child">
       <row>
         <field name="_id" value="5"/>
-        <field name="foo" value="bar52"/>
+        <field name="foo" value="bar5"/>
         <dataset name="grandchild">
         </dataset>
       </row>
@@ -58,35 +54,11 @@
         </dataset>
       </row>
       <row>
-        <field name="_id" value="2ab2d5ad-157d-447d-9746-77bc36fbd513"/>
+        <field name="_id" value="8"/>
         <field name="foo" value="bar8"/>
         <dataset name="grandchild">
-          <row>
-            <field name="_id" value="e47037e0-a992-46e4-bb9e-ad4258b7e9ac"/>
-            <field name="foo" value="asdf"/>
-          </row>
         </dataset>
       </row>
-    </dataset>
-  </row>
-  <row>
-    <field name="_id" value="abb83d2c-37b7-414d-b553-ae0ff0a537fc"/>
-    <dataset name="child">
-    </dataset>
-  </row>
-  <row>
-    <field name="_id" value="195f8687-a6a1-481b-8e43-3ed78fb22699"/>
-    <dataset name="child">
-    </dataset>
-  </row>
-  <row>
-    <field name="_id" value="9004d3c9-07ce-44b8-9ce4-84626f02f23a"/>
-    <dataset name="child">
-    </dataset>
-  </row>
-  <row>
-    <field name="_id" value="9e77d28f-ce4f-4dbf-8ca2-46c9619810b9"/>
-    <dataset name="child">
     </dataset>
   </row>
 </dataset>

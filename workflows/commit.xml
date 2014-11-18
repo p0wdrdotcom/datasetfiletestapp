@@ -2,4 +2,5 @@
     <atomic-commit>
         <dataset name="test"/>
     </atomic-commit>
+    <debug-all />
 </do>
